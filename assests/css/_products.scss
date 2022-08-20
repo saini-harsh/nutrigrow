@@ -1,0 +1,280 @@
+.products {
+  min-height: 500px;
+  background-image: url(../images/productspage/product-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @include flexcenter;
+  h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: $white;
+    text-transform: uppercase;
+  }
+}
+@media screen and (max-width: 992px) {
+  .products {
+    h2 {
+      text-align: center;
+    }
+  }
+}
+@media screen and (max-width: 540px) {
+  .products {
+    h2 {
+      font-size: 35px;
+      text-align: center;
+    }
+  }
+}
+.ourproducts {
+  @include paddingtb;
+  h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: $dark-black;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .hbline {
+    width: 80px;
+    min-height: 3px;
+    margin: 0 auto;
+    background-color: $dark-green;
+  }
+  p {
+    font-size: 17px;
+    font-weight: 400;
+    color: $light-grey;
+    text-align: center;
+    padding: 10px 80px;
+  }
+
+  button {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $dark-grey;
+    border-radius: 4px;
+    padding: 18px 50px;
+    border: 1px solid $hdark-grey;
+    background-color: transparent;
+    transition: 0.5s all ease-in-out;
+    &:hover {
+      background: rgb(78, 202, 25);
+      background: linear-gradient(
+        90deg,
+        rgba(78, 202, 25, 1) 0%,
+        rgba(38, 113, 22, 1) 100%
+      );
+      color: $white;
+      border: none;
+    }
+  }
+
+  .itemBox .hide {
+    display: none;
+  }
+  .itemBox {
+    display: block;
+  }
+
+  .product {
+    margin: 20px auto;
+    padding: 20px;
+    display: block;
+    text-align: center;
+    h5 {
+      font-size: 22px;
+      font-weight: 400;
+      color: $hdark-grey;
+      padding-top: 20px;
+    }
+    p {
+      font-size: 18px;
+      color: $dark-grey;
+      font-weight: 500;
+      padding-top: 0;
+      padding-bottom: 0;
+      text-transform: uppercase;
+    }
+    button {
+      font-size: 15px;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: $white;
+      border-radius: 50px;
+      padding: 10px 28px;
+      border: none;
+      background-color: $light-green;
+      transition: 0.5s all ease-in-out;
+      i {
+        margin-left: 7px;
+      }
+      &:hover {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1400px) {
+  .ourproducts {
+    button {
+      font-size: 16px;
+      padding: 18px 40px;
+    }
+    .product {
+      padding: 0px;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .ourproducts {
+    button {
+      font-size: 14px;
+      padding: 18px 30px;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .ourproducts {
+    button {
+      font-size: 8px;
+      padding: 10px 25px;
+    }
+  }
+}
+@media screen and (max-width: 540px) {
+  .ourproducts {
+    h2 {
+      font-size: 35px;
+    }
+    p {
+      font-size: 18px;
+    }
+    button {
+      margin-top: 15px;
+      font-size: 15px;
+      padding: 10px 30px;
+    }
+  }
+}
+.singleproduct {
+  min-height: 450px;
+  @include paddingtb;
+  @include flexcenter;
+  .imgbox {
+    border: 1px solid $light-grey;
+    padding: 50px;
+  }
+  .simgbox {
+    border: 1px solid $light-grey;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  h2 {
+    font-size: 40px;
+    color: $dark-black;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $dark-black;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .star {
+    i {
+      color: $yellow;
+    }
+    span {
+      color: $light-grey;
+    }
+  }
+  h3 {
+    font-size: 36px;
+    color: $dark-black;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 20px;
+  }
+  p {
+    font-size: 16px;
+    color: $hdark-grey;
+    font-weight: 400;
+  }
+  label {
+    font-size: 18px;
+    color: $dark-grey;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  select {
+    width: 30%;
+    min-height: 40px;
+    padding-top: 6px;
+    background-color: transparent;
+    border: 1px solid $light-grey;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+  button {
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $white;
+    border-radius: 50px;
+    padding: 10px 30px;
+    border: none;
+    margin-top: 20px;
+    background-color: $light-green;
+    transition: 0.5s all ease-in-out;
+    &:hover {
+      opacity: 80%;
+    }
+  }
+}
+@media screen and (max-width: 540px) {
+  .singleproduct {
+    min-height: 450px;
+    @include paddingtb;
+    @include flexcenter;
+    .imgbox {
+      border: 1px solid $light-grey;
+      padding: 10px;
+    }
+    .simgbox {
+      border: 1px solid $light-grey;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    h2 {
+      font-size: 30px;
+      margin-top: 30px;
+      text-align: center;
+    }
+    .star {
+      text-align: center;
+    }
+    h3 {
+      font-size: 26px;
+      text-align: center;
+    }
+    p {
+      font-size: 15px;
+      text-align: center;
+    }
+    label {
+      font-size: 16px;
+      margin-top: 5px;
+    }
+    select {
+      width: 100%;
+      margin-top: 5px;
+    }
+    button {
+      font-size: 14px;
+      margin: 10px auto !important;
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+.return {
+  min-height: 500px;
+  background-image: url(../images/returnpage/returnpolicy-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @include flexcenter;
+  h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: $white;
+    text-transform: uppercase;
+  }
+}
+@media screen and (max-width: 992px) {
+  .return {
+    h2 {
+      text-align: center;
+    }
+  }
+}
+@media screen and (max-width: 540px) {
+  .return {
+    h2 {
+      font-size: 35px;
+      text-align: center;
+    }
+  }
+}
+.tpgreturn {
+  min-height: 800px;
+  @include paddingtb;
+  @include flexcenter;
+  h2 {
+    font-size: 35px;
+    font-weight: 600;
+    color: $dark-green;
+    text-transform: uppercase;
+  }
+  .hbline {
+    width: 80px;
+    min-height: 3px;
+    background-color: $dark-green;
+  }
+  p {
+    font-size: 17px;
+    font-weight: 500;
+    color: $dark-grey;
+    margin-top: 10px;
+  }
+  h3 {
+    font-size: 25px;
+    font-weight: 700;
+    color: $dark-grey;
+    margin-top: 50px;
+  }
+  .float {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    p {
+      font-size: 17px;
+      color: $dark-grey;
+      font-weight: 500;
+      span {
+        font-weight: 800;
+        letter-spacing: 5px;
+      }
+      .green {
+        letter-spacing: 0;
+        font-weight: 700;
+        color: $dark-green;
+      }
+    }
+  }
+}
+@media screen and (max-width: 540px) {
+  .tpgreturn {
+    h2 {
+      font-size: 30px;
+      text-align: center;
+    }
+    .hbline {
+      margin: 0 auto;
+    }
+    p {
+      text-align: center;
+    }
+    .float {
+      p {
+        text-align: left;
+      }
+    }
+  }
+}

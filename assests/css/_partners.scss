@@ -1,0 +1,77 @@
+.partners {
+  min-height: 500px;
+  background-image: url(../images/partnerspage/partners-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @include flexcenter;
+  h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: $white;
+    text-transform: uppercase;
+  }
+}
+@media screen and (max-width: 992px) {
+  .partners {
+    h2 {
+      text-align: center;
+    }
+  }
+}
+@media screen and (max-width: 540px) {
+  .partners {
+    h2 {
+      font-size: 35px;
+      text-align: center;
+    }
+  }
+}
+.partnerslogo {
+  @include paddingtb;
+  h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: $dark-black;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .hbline {
+    width: 80px;
+    min-height: 3px;
+    background-color: $dark-green;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .partnerslogo {
+    @include paddingtb;
+    h2 {
+      margin-top: 50px;
+    }
+  }
+}
+@media screen and (max-width: 540px) {
+  .partnerslogo {
+    h2 {
+      font-size: 35px;
+    }
+  }
+}
+.social {
+  min-height: 60px;
+  background-color: $light-grey;
+  @include flexcenter;
+  .icons {
+    display: flex;
+    justify-content: center;
+    a {
+      text-decoration: none;
+      i {
+        font-size: 22px;
+        color: $light-green;
+        margin: 0px 20px;
+      }
+    }
+  }
+}

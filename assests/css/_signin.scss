@@ -1,0 +1,121 @@
+.signin {
+  min-height: 800px;
+  background-image: url(../images/signup/lightbgimg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @include flexcenter;
+  h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: $white;
+    text-transform: uppercase;
+  }
+  .cbox {
+    background-color: $white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 50px 40px;
+    h3 {
+      font-size: 35px;
+      font-weight: 700;
+      color: $dark-green;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .hbline {
+      width: 50px;
+      min-height: 3px;
+      margin: 0 auto;
+      background-color: $dark-green;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      color: $hdark-grey;
+      padding-right: 40px;
+    }
+    input {
+      width: 100%;
+      min-height: 44px;
+      margin: 10px 0px;
+      padding-left: 20px;
+      background-color: $vlight-grey;
+      border: 1px solid $light-grey;
+    }
+    .chbox {
+      display: flex;
+      justify-content: start;
+      label {
+        margin-top: 18px;
+        margin-left: 10px;
+      }
+      input {
+        width: 20px;
+      }
+    }
+    a {
+      font-size: 16px;
+      display: flex;
+      justify-content: end;
+    }
+    button {
+      font-size: 18px;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: $white;
+      border-radius: 50px;
+      padding: 10px 30px;
+      border: none;
+      margin-top: 20px;
+
+      background-color: $light-green;
+      transition: 0.5s all ease-in-out;
+      i {
+        margin-left: 7px;
+      }
+      &:hover {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 540px) {
+  .signin {
+    min-height: 700px;
+    .cbox {
+      padding: 40px 20px;
+      h3 {
+        font-size: 30px;
+      }
+      .hbline {
+        width: 40px;
+      }
+      p {
+        text-align: center;
+        padding-right: 0px;
+      }
+      input {
+        min-height: 40px;
+        margin: 7px 0px;
+      }
+      .chbox {
+        display: flex;
+        justify-content: start;
+        label {
+          margin-top: 15px;
+        }
+        input {
+          width: 20px;
+        }
+      }
+      a {
+        font-size: 14px;
+        display: flex;
+        justify-content: start;
+      }
+      button {
+        font-size: 15px;
+      }
+    }
+  }
+}

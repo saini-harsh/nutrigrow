@@ -1,0 +1,149 @@
+.invalidClassb {
+  border-bottom: 2px solid #f00 !important;
+}
+.validClassb {
+  border-bottom: 2px solid #00f000 !important;
+}
+.errb {
+  h6 {
+    color: #f00 !important;
+  }
+}
+.done {
+  color: $dark-green;
+}
+.mcontact {
+  min-height: 500px;
+  background-image: url(../images/contactpage/contact-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @include flexcenter;
+  h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: $white;
+    text-transform: uppercase;
+  }
+}
+@media screen and (max-width: 992px) {
+  .mcontact {
+    h2 {
+      text-align: center;
+    }
+  }
+}
+@media screen and (max-width: 540px) {
+  .mcontact {
+    h2 {
+      font-size: 35px;
+      text-align: center;
+    }
+  }
+}
+.contactform {
+  min-height: 500px;
+  @include flexcenter;
+  @include paddingtb;
+  text-align: center;
+  h2 {
+    font-size: 35px;
+    font-weight: 600;
+    color: $dark-grey;
+    text-transform: uppercase;
+  }
+  .hbline {
+    width: 80px;
+    min-height: 3px;
+    background-color: $dark-green;
+    margin: 0 auto;
+    display: block;
+  }
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 15px;
+    color: $dark-grey;
+  }
+  h4 {
+    font-size: 25px;
+    font-weight: 600;
+    color: $dark-grey;
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: 20px;
+  }
+  h6 {
+    font-size: 16px;
+    font-weight: 400;
+    color: $hdark-grey;
+    text-align: left;
+  }
+  .main {
+    input {
+      width: 100%;
+      min-height: 50px;
+      border: transparent;
+      padding-left: 10px;
+      border-bottom: 2px solid $light-grey;
+    }
+    span {
+      h6 {
+        margin-bottom: 20px;
+        padding-left: 10px;
+        padding-top: 5px;
+      }
+    }
+  }
+  textarea {
+    width: 100%;
+    min-height: 150px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border: 2px solid $light-grey;
+  }
+  button {
+    font-size: 19px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $white;
+    border-radius: 50px;
+    padding: 10px 30px;
+    border: none;
+    background-color: $light-green;
+    transition: 0.5s all ease-in-out;
+    i {
+      margin-left: 7px;
+    }
+    &:hover {
+      margin-left: 20px;
+    }
+  }
+}
+@media screen and (max-width: 540px) {
+  .contactform {
+    h2 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 16px;
+    }
+    h4 {
+      font-size: 22px;
+      text-align: center;
+    }
+    h6 {
+      font-size: 15px;
+      text-align: center;
+    }
+    .main {
+      input {
+        width: 100%;
+        min-height: 40px;
+      }
+    }
+    button {
+      font-size: 15px;
+    }
+  }
+}

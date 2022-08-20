@@ -1,0 +1,502 @@
+.trusted {
+  min-height: 330px;
+  @include flexcenter;
+  h4 {
+    font-size: 19px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 10px;
+    color: $dark-black;
+  }
+}
+.featured {
+  min-height: 760px;
+  background-image: url(../images/featured-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include flexcenter;
+  h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: $dark-black;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .hbline {
+    width: 150px;
+    min-height: 3px;
+    margin: 0 auto;
+    background-color: $dark-green;
+  }
+  .product {
+    border: 1px solid $light-grey;
+    margin: 80px auto;
+    padding: 50px;
+    display: block;
+    text-align: center;
+    h5 {
+      font-size: 24px;
+      color: $dark-grey;
+      font-weight: 500;
+    }
+    p {
+      font-size: 18px;
+      //   color: $light-grey;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+    button {
+      font-size: 15px;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: $white;
+      border-radius: 50px;
+      padding: 10px 28px;
+      border: none;
+      background-color: $light-green;
+      transition: 0.5s all ease-in-out;
+      i {
+        margin-left: 7px;
+      }
+      &:hover {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 540px) {
+  .featured {
+    h2 {
+      font-size: 30px;
+    }
+    .hbline {
+      width: 80px;
+    }
+    .product {
+      margin: 40px auto;
+      h5 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 15px;
+      }
+      button {
+        font-size: 13px;
+      }
+    }
+  }
+}
+.cannabinoids {
+  min-height: 1000px;
+  @include flexcenter;
+  position: relative;
+  h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: $dark-black;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .hbline {
+    width: 150px;
+    min-height: 3px;
+    margin: 0 auto;
+    background-color: $dark-green;
+  }
+
+  .abs {
+    padding: 20px 50px;
+    position: relative;
+    h4 {
+      font-size: 28px;
+      font-weight: 600;
+      text-align: center;
+      color: $white;
+      text-transform: uppercase;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 999;
+    }
+    img {
+      position: relative;
+      opacity: 50%;
+      img.active {
+        opacity: 100%;
+      }
+      &:hover {
+        opacity: 100%;
+      }
+    }
+  }
+  .content {
+    display: none;
+    @include paddingtb;
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    right: 15%;
+    background-color: $white;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 9999;
+    .in {
+      i:first-child {
+        font-size: 25px;
+        font-weight: 600;
+        color: $dark-black !important;
+        &:hover {
+          color: $dark-green !important;
+        }
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+    h5 {
+      font-size: 25px;
+      font-weight: 600;
+      color: $dark-black;
+      span {
+        color: $dark-black !important;
+        text-transform: uppercase;
+      }
+    }
+    h6 {
+      font-size: 22px;
+      font-weight: 600;
+      color: $dark-green;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      color: $hdark-grey;
+    }
+    i {
+      color: $dark-green;
+    }
+    span {
+      color: $hdark-grey;
+      text-transform: capitalize;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .cannabinoids {
+    @include paddingtb;
+    .abs {
+      padding: 20px;
+      position: relative;
+      h4 {
+        font-size: 28px;
+        font-weight: 600;
+        color: $white;
+        text-transform: uppercase;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+      }
+    }
+  }
+}
+@media screen and (max-width: 540px) {
+  .cannabinoids {
+    h2 {
+      font-size: 30px;
+    }
+    .hbline {
+      width: 80px;
+    }
+    .content {
+      padding: 20px;
+      h5 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
+.testimonials {
+  min-height: 670px;
+  background: rgb(66, 176, 23);
+  background: linear-gradient(
+    90deg,
+    rgba(66, 176, 23, 1) 0%,
+    rgba(39, 139, 11, 1) 100%
+  );
+  @include flexcenter;
+  h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .hbline {
+    width: 150px;
+    min-height: 3px;
+    margin: 0 auto;
+    background-color: $white;
+  }
+  .circle {
+    border: 1px solid $white;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    .gcircle {
+      border-radius: 50%;
+      padding: 70px;
+      background-color: $dark-green;
+    }
+    .rcircle {
+      border-radius: 50%;
+      padding: 70px;
+      background-color: $brown;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      color: $white;
+      font-style: italic;
+      margin-top: 10px;
+    }
+    h6 {
+      font-size: 17px;
+      font-weight: 600;
+      color: $white;
+    }
+    i {
+      font-size: 16px;
+      color: $yellow;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .testimonials {
+    .circle {
+      border: 1px solid $white;
+      border-radius: 50%;
+      padding: 10px;
+      text-align: center;
+      .gcircle {
+        border-radius: 50%;
+        padding: 30px;
+        background-color: $dark-green;
+      }
+      .rcircle {
+        border-radius: 50%;
+        padding: 30px;
+        background-color: $brown;
+      }
+    }
+  }
+}
+@media screen and (max-width: 540px) {
+  .testimonials {
+    min-height: 550px;
+    h2 {
+      font-size: 30px;
+    }
+    .hbline {
+      width: 80px;
+    }
+  }
+}
+.done {
+  color: $dark-green;
+}
+.invalidClass {
+  border: 2px solid #f00 !important;
+}
+.validClass {
+  border: 2px solid #00f000 !important;
+}
+.err {
+  color: #f00 !important;
+}
+
+.contact {
+  min-height: 690px;
+  background-image: url(../images/index/contact-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include flexcenter;
+  h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: $white;
+    text-transform: uppercase;
+  }
+  .hbline {
+    width: 80px;
+    min-height: 3px;
+    background-color: $white;
+  }
+  input {
+    width: 100%;
+    min-height: 50px;
+    margin: 5px 0px;
+    padding-left: 20px;
+  }
+  textarea {
+    width: 100%;
+    margin: 5px 0px;
+    min-height: 150px;
+    padding-left: 20px;
+  }
+  button {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $white;
+    border-radius: 50px;
+    padding: 10px 30px;
+    border: none;
+    margin-top: 20px;
+    background-color: $light-green;
+    transition: 0.5s all ease-in-out;
+    i {
+      margin-left: 7px;
+    }
+    /* &:hover {
+      margin-left: 20px;
+    } */
+  }
+}
+@media screen and (max-width: 540px) {
+  .contact {
+    min-height: 690px;
+    background-image: url(../images/contact-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include flexcenter;
+    h2 {
+      font-size: 30px;
+      text-align: center;
+    }
+    .hbline {
+      width: 80px;
+      margin: 0 auto;
+    }
+    input {
+      width: 100%;
+      min-height: 45px;
+      padding-left: 10px;
+    }
+    textarea {
+      min-height: 120px;
+      padding-left: 10px;
+    }
+    button {
+      font-size: 15px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}
+.focused {
+  min-height: 750px;
+  background-color: $white;
+  @include flexcenter;
+  @include paddingtb;
+  h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: $dark-black;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .hbline {
+    width: 150px;
+    min-height: 3px;
+    margin: 0 auto;
+    background-color: $dark-green;
+  }
+  .gbox {
+    min-height: 95px;
+    background-color: $vlight-grey;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    h4 {
+      font-size: 22px;
+      font-weight: 600;
+      color: $dark-black;
+      text-transform: uppercase;
+      padding-right: 10px;
+    }
+    img {
+      padding: 0px 20px;
+    }
+    &:hover {
+      background-color: $light-green;
+      h4 {
+        color: $white;
+      }
+      .imgshow {
+        display: none !important;
+      }
+      .imghide {
+        display: block !important;
+      }
+    }
+
+    .imghide {
+      display: none;
+    }
+  }
+  .gbox.active {
+    background-color: $light-green;
+    h4 {
+      color: $white;
+    }
+    .imgshow {
+      display: none !important;
+    }
+    .imghide {
+      display: block !important;
+    }
+  }
+}
+@media screen and (max-width: 540px) {
+  .focused {
+    min-height: 750px;
+    background-color: $white;
+    @include flexcenter;
+    @include paddingtb;
+    h2 {
+      font-size: 30px;
+    }
+    .hbline {
+      width: 80px;
+    }
+    .gbox {
+      min-height: 70px;
+      margin: 2px 0;
+      justify-content: flex-start;
+      padding-left: 30px;
+      h4 {
+        font-size: 18px;
+        order: 2;
+      }
+      img {
+        order: 1;
+        padding-right: 10px;
+      }
+    }
+    .rbox {
+      min-height: 70px;
+      margin: 2px 0;
+      justify-content: flex-start;
+      padding-left: 30px;
+      h4 {
+        font-size: 18px;
+      }
+    }
+  }
+}

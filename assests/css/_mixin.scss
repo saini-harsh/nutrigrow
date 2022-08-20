@@ -1,0 +1,10 @@
+@mixin flexcenter {
+  display: flex;
+  align-items: center;
+}
+@mixin paddingtb {
+  padding: 50px 0px;
+}
+@mixin paddingtbs {
+  padding: 20px 0px;
+}
